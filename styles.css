@@ -16,18 +16,20 @@ html {
     background-color: var(--background-color);
 }
 
-main, footer, nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
+body {
+   margin:0 auto;
+   padding:10px;
+   max-width:1400px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
 }
 
 .nav-container {
     display:flex;
     justify-content: space-between;
     align-content: center;
-    width:83vw;
+    
     height:75px;
     flex-flow:row wrap;
     margin:10px 5px;
@@ -55,9 +57,68 @@ li > a {
     text-decoration: none;
 }
 
-#James {
+h2,h3 {
     color: var(--name-color);
 }
 
+span {
+    color:red;
+}
+
+section {
+    padding: 1rem;
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+#about-me {
+    
+
+    
+}
+
+.about-me-container {
+    display: flex;
+    height: 50vh;
+}
+
+.about-me-text-container {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+    
+
+}
+
+.mac-logo {
+    flex:1;
+    height:70vh;
+    width:100%;
+    
+}
+
+img {
+    height:auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-me-text-container > h2 {
+    margin-bottom: 20px;
+    
+    
+}
+
+footer {
+    text-align: center;
+}
 
 
