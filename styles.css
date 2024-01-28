@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --background-color:rgba(128, 0, 0, 0.87);
+    --name-color: rgb(255, 204, 102, 0.8);
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--background-color);
+}
+
+main, footer, nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav-container {
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    width:83vw;
+    height:75px;
+    flex-flow:row wrap;
+    margin:10px 5px;
+    padding:10px;
+    
+    
+}
+
+.navigation-items {
+    
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row wrap;
+    width:35vw;
+    gap:20px;
+}
+
+ul > li {
+list-style-type: none;
+}
+
+li > a {
+    color:var(--name-color);
+    text-decoration: none;
+}
+
+#James {
+    color: var(--name-color);
+}
+
+
+
