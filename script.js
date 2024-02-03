@@ -14,6 +14,13 @@ const checkValidity = () => {
     }
 };
 
+document.querySelector("#calculator").addEventListener("keypress", function (e) {
+    if (e.which != 8 && e.which != 0 && e.which < 48 || e.which > 57)
+    {
+        e.preventDefault();
+    }
+});
+
 checkButton.addEventListener('click', () => {
     resultContainter.replaceChildren();
     checkValidity();
